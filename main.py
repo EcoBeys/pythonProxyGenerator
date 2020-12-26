@@ -1,7 +1,3 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 import urllib.request
 from sys import *
 import urllib3
@@ -28,9 +24,6 @@ print("""
 count = input("Oluşturulacak Proxy Sayısı: ")
 proxy_api = "https://www.proxyscan.io/api/proxy?format=txt&type=http"
 
-# Press the green button in the gutter to run the script.
-
-
 if __name__ == '__main__':
 
     i = int(count)
@@ -41,7 +34,7 @@ if __name__ == '__main__':
             proxy = (s.strip().decode("utf-8"))
             print(proxy)
             x = proxy        
-            time.sleep(2)
+            time.sleep(1)
             with open("Proxy.txt", "a") as file:
                         file.write(x +"\n")
             file.close()
